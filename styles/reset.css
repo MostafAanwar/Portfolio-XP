@@ -1,0 +1,17 @@
+html, body {
+    overflow: hidden;
+}
+
+a, button {
+    background-color: transparent;
+    font-weight: normal;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,134 @@
+.start-menu-popup {
+    position: fixed;
+    bottom: var(--taskbar-height);
+    left: 0;
+    width: 40vw;
+    height: 80vh;
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: linear-gradient(180deg, rgba(0, 99, 173, 1) 10%, rgba(2, 140, 214, 1) 90%, rgba(0, 99, 173, 1) 100%);
+    box-shadow: 6px -5px 16px -8px rgba(0, 99, 173, 1);
+}
+
+.desktop {
+    width: 97%;
+    height: 97%;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+}
+
+.start-menu-popup.closed {
+    display: none;
+}
+
+.start-menu-popup header {
+    display: flex;
+    color: white;
+}
+
+.start-menu-popup header img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.start-menu-popup header h1 {
+    flex: 1;
+    margin: auto 10px;
+    text-shadow: 0px 2px 6px #000000;
+    font-size: 26px;
+}
+
+
+
+.start-menu-popup main {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: row;
+    background-color: white;
+    margin: 0 5px;
+}
+
+.start-menu-popup main aside {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    overflow: hidden;
+
+}
+
+.start-menu-popup main aside:nth-child(even) {
+    border-left: 1px solid #9ABCDD;
+    background-color: #CEE7F7;
+}
+
+.start-menu-popup main aside .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    overflow: auto;
+}
+
+.start-menu-popup main aside .separator {
+    border-bottom: 1px solid #9ABCDD;
+    margin: 10px auto;
+    width: 80%;
+
+}
+
+.start-menu-popup main aside .start-menu-button {
+    display: flex;
+    flex-flow: row;
+    padding: 10px;
+
+}
+
+.start-menu-popup main aside .start-menu-button img {
+    width: 60px;
+    height: 60px;
+}
+
+.start-menu-popup main aside .start-menu-button div {
+    display: flex;
+    flex-flow: column;
+    margin: auto 10px;
+    text-align: left;
+}
+
+.start-menu-popup main aside .start-menu-button div p {
+    color: #555;
+}
+
+.start-menu-popup footer {
+    display: flex;
+    justify-content: end;
+    color: white;
+}
+
+.start-menu-popup footer button {
+    display: flex;
+    flex-flow: row;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.start-menu-popup footer button p {
+    margin: auto 5px;
+}

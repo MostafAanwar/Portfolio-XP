@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/startmenu.css">
+</head>
+
+<body>
+    <div class="overlay hidden"></div>
+    <main class="desktop">
+        <a href="#" class="icon" onclick="openGamesPopup()">
+            <img src="./assets/ICON/19.ico" alt="Project 1">
+            <div><p>Games I</p>Tested</div>
+        </a>
+        <a href="#" class="icon" onclick="openProjectsPopup()">
+            <img src="./assets/ICON/322.ico" alt="Project 2">
+            <div>My projects</div>
+        </a>
+        <a href="#" class="icon" onclick="openExperiencesPopup()">
+            <img src="./assets/ICON/994.ico" alt="experiences">
+            <div>Experience</div>
+        </a>
+        <a href="#" class="icon" onclick="openAboutMePopup()">
+            <img src="./assets/ICON/511.ico" alt="About Me">
+            <div>About Me</div>
+        </a>
+        <div class="cv">
+            <a href="https://drive.google.com/file/d/1BMMdnT5q_S2mg66yWoa6N6NK7lw50Xe7/view" target="_blank" class="icon">
+                <img src="./assets/ICON/1162.ico" alt="CV">
+                <div>My CV</div>
+            </a>
+        </div>
+    </main>
+    <footer class="taskbar">
+        <aside class="start-menu" onclick="toggleClass('start-menu', 'closed')">
+            <button class="start-menu"><a> <img src="./assets/360x640-filea316.png" />
+        </aside>
+    </footer>
+    <section id="start-menu" class="start-menu-popup closed">
+        <header>
+            <img src="./assets/avatar.png" />
+            <h1>Mostafa Mohamed</h1>
+        </header>
+        <main>
+            <aside>
+                <div class="background">
+                    <button class="start-menu-button">
+                        <img src="./assets/ICON/1487.ico" />
+                        <div>
+                            <h3>Internet</h3>
+                            <p>Internet Explorer</p>
+                        </div>
+                    </button>
+                    <button class="start-menu-button">
+                        <img src="./assets/email.png" />
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>Outlook Express</p>
+                        </div>
+                    </button>
+                    <div class="separator"></div>
+                    <button class="start-menu-button">
+                        <img src="./assets/ICON/1490.png" />
+                        <div>
+                            <h4>Windows Media Player</h4>
+                        </div>
+                    </button>
+                    <button class="start-menu-button">
+                        <img src="./assets/ICON/1491.png" />
+                        <div>
+                            <h4>Windows Movie Maker</h4>
+                        </div>
+                    </button>
+                    <button class="start-menu-button">
+                        <img src="./assets/ICON/1492.png" />
+                        <div>
+                            <h4>Tour Windows XP</h4>
+                        </div>
+                    </button>
+                    <button class="start-menu-button">
+                        <img src="./assets/ICON/1493.png" />
+                        <div>
+                            <h4>Files and Settings Transfer Wizard</h4>
+                        </div>
+                    </button>
+                </div>
+            </aside>
+            <aside>
+                <div class="background">
+                    <button class="start-menu-button">
+                        <img src="./assets/ICON/797.ico" />
+                        <div>
+                            <h3>My Documents</h3>
+                        </div>
+                    </button>
+                    <button class="start-menu-button">
+                        <img src="./assets/ICON/804.ico" />
+                        <div>
+                            <h3>My Pictures</h3>
+                        </div>
+                    </button>
+                    <button class="start-menu-button">
+                        <img src="./assets/ICON/820.ico" />
+                        <div>
+                            <h3>My Music</h3>
+                        </div>
+                    </button>
+                    <button class="start-menu-button">
+                        <img src="./assets/ICON/123.ico" />
+                        <div>
+                            <h3>My Computer</h3>
+                        </div>
+                    </button>
+                    <div class="separator"></div>
+                    <button class="start-menu-button">
+                        <img src="./assets/ICON/1126.ico" />
+                        <div>
+                            <h3>Control Panel</h3>
+                        </div>
+                    </button>
+                    <div class="separator"></div>
+                    <button class="start-menu-button">
+                        <img src="./assets/ICON/1384.ico" />
+                        <div>
+                            <h3>Help and Support</h3>
+                        </div>
+                    </button>
+                    <button class="start-menu-button">
+                        <img src="./assets/ICON/190.ico" />
+                        <div>
+                            <h3>Search</h3>
+                        </div>
+                    </button>
+                    <button class="start-menu-button">
+                        <img src="./assets/ICON/217.ico" />
+                        <div>
+                            <h3>Run</h3>
+                        </div>
+                    </button>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <button class="log-off">
+                <img src="./assets/ICON/1393.ico" />
+                <p>Log Off</p>
+            </button>
+            <button class="turn-off" onclick="openShutdownPopup()">
+                <img src="./assets/ICON/1426.ico" />
+                <p>Turn Off Computer</p>
+            </button>
+        </footer>
+    </section>
+
+    <div id="games-popup" class="popup-window closed">
+        <div id="popup-header" class="popup-header">
+            <div class="title-bar">
+                <span>Games I tested</span>
+                <button onclick="closePopup('games-popup')">
+                    <img src="./assets/close.png" alt="close start-menu-button">
+                </button>
+            </div>
+            <div class="menu-bar">
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Favorites</span>
+                <span>Tools</span>
+                <span>Help</span>
+            </div>
+            <div class="navigation-bar">
+                <button>Back</button>
+                <button>Forward</button>
+                <button>Up</button>
+                <button>Search</button>
+                <button>Folders</button>
+                <button>Views</button>
+            </div>
+            <div class="popup-address">
+                <label for="address-bar">Address:</label>
+                <input type="text" id="address-bar" value="C:\Documents and Settings\All Users\desktop\Games I tested" readonly />
+                <button>Go</button>
+            </div>
+        </div>
+        <div class="popup-body">
+            <aside class="popup-sidebar">
+                <div class="sidebar-section">
+                    <p>File and Folder Tasks</p>
+                    <div class="separator"></div>
+                    <ul>
+                        <li><a href="#">Make a new folder</a></li>
+                        <li><a href="#">Publish this folder to the Web</a></li>
+                        <li><a href="#">Share this folder</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <p>Other Places</p>
+                    <div class="separator"></div>
+                    <ul>
+                        <li><a href="">Desktop</a></li>
+                        <li><a href="#">Shared Documents</a></li>
+                        <li><a href="#">My Computer</a></li>
+                        <li><a href="#">My Network Places</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <p>Details</p>
+                </div>
+            </aside>
+            <div class="popup-content">
+                <div class="folder">
+                    <img src="./assets/parkBeyond.png" alt="Park Beyond" />
+                    <a href="https://en.bandainamcoent.eu/park-beyond/park-beyond" target="_blank">Park Beyond.exe</a>
+                </div>
+                <div class="folder">
+                    <img src="./assets/suckup.jpg" alt="Suckup Game" />
+                    <a href="https://www.playsuckup.com/" target="_blank">
+                        <span>Suck Up.exe</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <img src="./assets/SpaceSprouts.png" alt="Space Sprouts" />
+                    <a href="https://store.steampowered.com/app/2790020/Space_Sprouts/" target="_blank">
+                        <span>Space Sprouts.exe</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <img src="./assets/dodgy deli.jpg" alt="Dody Delieveries" />
+                    <a href="https://store.steampowered.com/app/2231300/Dodgy_Deliveries/" target="_blank">
+                        <span>Dodgy Delieveries.exe</span>
+                    </a>
+                </div>
+                <div class="folder">
+                    <img src="./assets/ICON/19.ico" alt="Dont OPEN" />
+                    <a href="https://youtu.be/EE-xtCF3T94" target="_blank">
+                        <span>who is that pokemon</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects-popup" class="popup-window closed">
+        <div id="popup-header" class="popup-header">
+            <div class="title-bar">
+                <span>My projects</span>
+                <button onclick="closePopup('projects-popup')">
+                    <img src="./assets/close.png" alt="close start-menu-button">
+                </button>
+            </div>
+            <div class="menu-bar">
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Favorites</span>
+                <span>Tools</span>
+                <span>Help</span>
+            </div>
+            <div class="navigation-bar">
+                <button>Back</button>
+                <button>Forward</button>
+                <button>Up</button>
+                <button>Search</button>
+                <button>Folders</button>
+                <button>Views</button>
+            </div>
+            <div class="popup-address">
+                <label for="address-bar-projects">Address:</label>
+                <input type="text" id="address-bar-projects" value="C:\Documents and Settings\All Users\desktop\My Projects" readonly />
+                <button>Go</button>
+            </div>
+        </div>
+        <div class="popup-body">
+            <aside class="popup-sidebar">
+                <div class="sidebar-section">
+                    <p>File and Folder Tasks</p>
+                    <div class="separator"></div>
+                    <ul>
+                        <li><a href="#">Make a new folder</a></li>
+                        <li><a href="#">Publish this folder to the Web</a></li>
+                        <li><a href="#">Share this folder</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <p>Other Places</p>
+                    <div class="separator"></div>
+                    <ul>
+                        <li><a href="">Desktop</a></li>
+                        <li><a href="#">Shared Documents</a></li>
+                        <li><a href="#">My Computer</a></li>
+                        <li><a href="#">My Network Places</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <p>Details</p>
+                </div>
+            </aside>
+            <div class="popup-content">
+                <div class="folder">
+                    <img src="./assets/Octicons-mark-github.svg" alt="Arcade Game" />
+                    <a href="https://github.com/MostafAanwar/ClassicGameArcade" target="_blank">Arcade Game (code)</a>
+                </div>
+                <div class="folder">
+                    <img src="./assets/arcade.png" alt="Arcade Game exec" />
+                    <a href="https://mostafaanwar.github.io/ClassicGameArcade/" target="_blank">Classic Arcade Game.exe</a>
+                </div>
+                <div class="folder">
+                    <img src="./assets/Octicons-mark-github.svg" alt="Memory game" />
+                    <a href="https://github.com/MostafAanwar/MemoryGame" target="_blank">Memory game (code)</a>
+                </div>
+                <div class="folder">
+                    <img src="./assets/memory game.png" alt="Memory Game Exec" />
+                    <a href="https://mostafaanwar.github.io/MemoryGame/" target="_blank">Memory Game.exe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="experiences-popup" class="popup-window closed">
+        <div id="popup-header" class="popup-header">
+            <div class="title-bar">
+                <span>Experience</span>
+                <button onclick="closePopup('experiences-popup')">
+                    <img src="./assets/close.png" alt="close start-menu-button">
+                </button>
+            </div>
+            <div class="menu-bar">
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Favorites</span>
+                <span>Tools</span>
+                <span>Help</span>
+            </div>
+            <div class="navigation-bar">
+                <button>Back</button>
+                <button>Forward</button>
+                <button>Up</button>
+                <button>Search</button>
+                <button>Folders</button>
+                <button>Views</button>
+            </div>
+            <div class="popup-address">
+                <label for="address-bar-projects">Address:</label>
+                <input type="text" id="address-bar-projects" value="C:\Documents and Settings\All Users\desktop\Experience" readonly />
+                <button>Go</button>
+            </div>
+        </div>
+        <div class="popup-body">
+            <aside class="popup-sidebar">
+                <div class="sidebar-section">
+                    <p>File and Folder Tasks</p>
+                    <div class="separator"></div>
+                    <ul>
+                        <li><a href="#">Make a new folder</a></li>
+                        <li><a href="#">Publish this folder to the Web</a></li>
+                        <li><a href="#">Share this folder</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <p>Other Places</p>
+                    <div class="separator"></div>
+                    <ul>
+                        <li><a href="">Desktop</a></li>
+                        <li><a href="#">Shared Documents</a></li>
+                        <li><a href="#">My Computer</a></li>
+                        <li><a href="#">My Network Places</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <p>Details</p>
+                </div>
+            </aside>
+            <div class="popup-content">
+                <div class="folder">
+                    <img src="./assets/Gameit.jpeg" alt="Game IT" />
+                    <a href="https://www.gameit.ai/en" target="_blank">Game IT (part-time QA FEB 2023 - MAY 2024)</a>
+                </div>
+                <div class="folder">
+                    <img src="./assets/Limbic_Color_Solid_Square-1920w.png" alt="Limbic Entertainment" />
+                    <a href="https://www.limbic-entertainment.de" target="_blank">Limbic Entertainment (QA tester JAN 2023 - APR 2024)</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Popup -->
+    <div id="aboutme-popup" class="popup-window closed notepad-window">
+        <div class="notepad-header">
+            <div class="title">About Me - Notepad</div>
+            <button onclick="closePopup('aboutme-popup')">
+                <img src="./assets/close.png" alt="close start-menu-button">
+            </button>
+        </div>
+        <div class="notepad-menu">
+            <span>File</span>
+            <span>Edit</span>
+            <span>Format</span>
+            <span>View</span>
+            <span>Help</span>
+        </div>
+        <div class="notepad-content">
+            <img src="./assets/IMG_4187.jpg" alt="Mostafa wearing a headset talking and smiling" class="aboutme-image">
+            <div class="aboutme-text">
+                <p>
+                    QA Tester with 1.5+ years of experience. Strong ownership mindset,
+                    proficient in Manual testing and game testing, excellent communication and collaboration
+                    skills, and a passion for learning and adapting to new technologies.
+                </p>
+                <br>
+                <p>
+                    You can find/contact me on:
+                    <br>
+                    My email: <a href="mailto:mostafanwar.jabr@gmail.com">mostafanwar.jabr@gmail.com</a>
+                    <br>
+                    My linkedin: <a href="https://www.linkedin.com/in/mostafa-anwar/" target="_blank">https://www.linkedin.com/in/mostafa-anwar/</a> 
+                    <br>
+                    My github: <a href="github.com/mostafAanwar/" target="_blank">github.com/mostafAanwar/</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shutdown Popup -->
+    <div id="shutdown-popup" class="shutdown-popup hidden">
+        <div class="shutdown-header">
+            <h2>Turn off computer</h2>
+            <img src="./assets/windows-icon.png" alt="Windows Logo" />
+        </div>
+        <div class="shutdown-content">
+            <div class="shutdown-option">
+                <img src="./assets/Screenshot 2024-06-19 152108.png" alt="Stand By" />
+                <p>Stand By</p>
+            </div>
+            <div class="shutdown-option">
+                <button onclick="close_window()">
+                    <img src="./assets/turnoff.png" alt="Turn Off" />
+                    <p style="color: white;">Turn Off</p>
+                </button>
+            </div>
+            <div class="shutdown-option">
+                <img src="./assets/restart.ico" alt="Restart" />
+                <p>Restart</p>
+            </div>
+        </div>
+        <div class="shutdown-footer">
+            <button class="shutdown-cancel" onclick="closeShutdownPopup()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="startmenu.js"></script>
+</body>
+
+</html>
