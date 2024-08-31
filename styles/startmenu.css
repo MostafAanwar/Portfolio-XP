@@ -14,6 +14,40 @@
     box-shadow: 6px -5px 16px -8px rgba(0, 99, 173, 1);
 }
 
+@media (max-width: 768px) {
+    .start-menu-popup {
+        width: 90vw;
+        height: 70vh;
+        bottom: 50px;
+        left: 5%;
+    }
+
+    .cv{
+        width: 95%;
+        margin-top: 30px;
+    }
+
+    .start-menu-popup header h1 {
+        font-size: 20px;
+    }
+
+    .start-menu-popup main {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .start-menu-popup main aside {
+        flex: 1;
+        overflow: auto;
+        margin: 5px 0;
+    }
+
+    .start-menu-popup footer {
+        justify-content: center;
+    }
+}
+
+
 .desktop {
     width: 97%;
     height: 97%;

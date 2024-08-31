@@ -13,14 +13,47 @@ body {
     flex-flow: column;
     overflow: hidden;
     background-image: url("../background.webp");
-    background-size: cover;
+    background-size: 100vw 100vh;
     margin: 0;
     padding: 0;
 }
 
+@media (max-width: 768px) {
+    body {
+        flex-flow: column;
+        
+        overflow: auto;
+    }
+
+    .icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .taskbar {
+        height: 50px;
+    }
+
+    .popup-window {
+        width: 90%;
+        height: 80%;
+        top: 10%;
+        left: 5%;
+    }
+
+    .notepad-window {
+        width: 90%;
+        height: 70%;
+        top: 15%;
+        left: 5%;
+    }
+}
+
+
 .icon {
     /* width: 100px; */
-    height: 100px;
+    width: 64px;
+    height: 64px;
     margin: 10px;
     text-align: inherit;
     color: white;
