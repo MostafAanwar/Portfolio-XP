@@ -56,7 +56,8 @@ body {
     height: 64px;
     margin: 10px;
     text-align: inherit;
-    color: white;
+    color: black;
+    font-weight: bold;
     text-decoration: none;
     cursor: pointer;
 }
