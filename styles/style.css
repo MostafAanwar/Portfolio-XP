@@ -52,14 +52,14 @@ body {
 
 .icon {
     /* width: 100px; 
-    width: 64px;
+    width: 100px;
     height: 64px;
     margin: 10px;*/
-    width: 200px;
-    height: 200px;
-    margin: 35px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
     text-align: inherit;
-    color: black;
+    color: white;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
