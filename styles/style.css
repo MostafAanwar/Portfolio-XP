@@ -51,10 +51,13 @@ body {
 
 
 .icon {
-    /* width: 100px; */
+    /* width: 100px; 
     width: 64px;
     height: 64px;
-    margin: 10px;
+    margin: 10px;*/
+    width: 203px;
+    height: 200px;
+    margin: 36px;
     text-align: inherit;
     color: black;
     font-weight: bold;
