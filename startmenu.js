@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  function openStartMenu() {
+function openStartMenu() {
 }
 
 
@@ -140,5 +139,3 @@ function close_window() {
 document.querySelector('.overlay').addEventListener('click', closeShutdownPopup);
 
 
-
-});
